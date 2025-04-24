@@ -146,13 +146,16 @@ public extension Drop {
     /// - Parameters:
     ///   - icon: Optional icon image.
     ///   - handler: Handler to be called when the drop is tapped.
-    public init(icon: UIImage? = nil, handler: @escaping () -> Void) {
+    public init(icon: UIImage? = nil, tint: UIColor = .systemBlue, handler: @escaping () -> Void) {
       self.icon = icon
+      self.tint = tint
       self.handler = handler
     }
 
     /// Icon.
     public var icon: UIImage?
+      
+    public var tint: UIColor
 
     /// Handler.
     public var handler: () -> Void
