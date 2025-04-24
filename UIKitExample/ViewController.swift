@@ -196,7 +196,7 @@ final class ViewController: UIViewController {
       title: title,
       subtitle: subtitle,
       icon: icon,
-      action: .init(icon: buttonIcon, handler: {
+      action: .init(icon: buttonIcon, tint: .systemPurple, handler: {
         print("Drop tapped")
         Drops.hideCurrent()
       }),
